@@ -1,0 +1,110 @@
+/* Universal reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height for HTML and body */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Container for the Sudoku page with centered content */
+.page{
+  text-align: center;
+}
+
+/* Header style with a background gradient and centered text */
+.page-header h3 {
+  margin-bottom: 20px; 
+}
+
+.page-header {
+  background: linear-gradient(rgba(108, 131, 215, 0.7), rgba(0, 1, 58, 0.7)), 
+              url('C:\Users\HP\Desktop\myapp\myapp\public\image\Background0.jpg') no-repeat center center/cover; /*Add background*/
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Style for Sudoku input cells */
+.cellInput {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  border: 1px solid rgb(59, 76, 186);
+  outline: none; 
+}
+
+/* Focus effect for input cells */
+.cellInput:focus {
+  border: 2px solid rgb(26, 0, 97); 
+  background-color: #f0f8ff; 
+  color: #4f4f4f;
+}
+
+/* Table styles for Sudoku grid */
+table{
+  border-collapse: collapse;
+  border: 3px solid white;
+  background-color: rgb(212, 213, 253);
+}
+
+td{
+  padding: 0;
+}
+
+/* Button container styling */
+.buttonContainer{
+  margin-top: 20px;
+}
+
+/* Styling for the action buttons (check, solve, reset) */
+.solveButton, .checkButton, .resetButton {
+  margin: 0 20px;
+  margin-top: 20px;
+  background-color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: rgb(26, 0, 97);
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Hover effect for buttons */
+.solveButton:hover, .checkButton:hover, .resetButton:hover {
+  background-color: rgb(26, 0, 97);  /* Darker background color */
+  color: white;                      /* Change text color to white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a light shadow effect */
+}
+
+
+/* Dynamic borders for cells to visually separate 3x3 grid blocks */
+.cellInput.border-top {
+  border-top: 3px solid rgb(26, 0, 97);
+}
+
+.cellInput.border-left {
+  border-left: 3px solid rgb(26, 0, 97);
+}
+
+.cellInput.border-bottom {
+  border-bottom: 3px solid rgb(26, 0, 97);
+}
+
+.cellInput.border-right {
+  border-right: 3px solid rgb(26, 0, 97);
+}
+
+
+  
